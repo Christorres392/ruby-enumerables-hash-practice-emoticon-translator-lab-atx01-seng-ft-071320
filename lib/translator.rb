@@ -39,7 +39,7 @@ lib = load_library(file)
 #binding.pry
   lib.each do |key, value|
     #binding.pry
-    if lib[key] == j_meaning
+    if lib[value].include?(:japanese)
       binding.pry
       key
     else
