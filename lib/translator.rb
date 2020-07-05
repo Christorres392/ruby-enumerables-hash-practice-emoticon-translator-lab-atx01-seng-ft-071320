@@ -18,7 +18,7 @@ end
 =end
 def load_library(file)
   emot_hash = {}
-
+binding.pry
 end
 
 def get_japanese_emoticon
