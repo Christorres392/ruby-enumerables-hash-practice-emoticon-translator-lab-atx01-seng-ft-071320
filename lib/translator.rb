@@ -39,7 +39,7 @@ def get_japanese_emoticon (file, e_meaning)
 
       #binding.pry
   end
-    e_meaning ? e_meaning : sorry_message
+    e_meaning ? lib[e_meaning][:japanese] : sorry_message
 end
 
 def get_english_meaning (file, j_meaning)
