@@ -10,7 +10,7 @@ binding.pry
 emoticons.each do |key, value|
 end
 end
-end
+
 
 def get_japanese_emoticon
   # code goes here
