@@ -39,7 +39,7 @@ lib = load_library(file)
 #binding.pry
   lib.each do |key, value|
     binding.pry
-    if value[:japanese] == j_meaning
+    if lib[:japanese] == j_meaning
       key
     else
     "No emoticon found"
