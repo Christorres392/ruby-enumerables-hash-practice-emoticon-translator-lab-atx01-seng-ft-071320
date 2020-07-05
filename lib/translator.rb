@@ -44,7 +44,7 @@ lib = load_library(file)
     #binding.pry
   elseif
      "Sorry, that emoticon was not found"
-     binding.pry
+    # binding.pry
     end
   end
 end
