@@ -10,7 +10,7 @@ new_hash = {}
 emoticons_file.each  do |key, value|
   new_hash[key] = {}
 end
-end
+
 #binding.pry
 
 end
