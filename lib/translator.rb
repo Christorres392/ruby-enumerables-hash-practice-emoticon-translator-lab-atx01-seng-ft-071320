@@ -12,9 +12,8 @@ emoticons_file.each  do |key, value|
   new_hash[key][:english] = value[0]
   new_hash[key][:japanese] = value[1]
 end
-
+new_hash
 #binding.pry
-
 end
 
 def get_japanese_emoticon
