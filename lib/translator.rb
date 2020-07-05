@@ -28,8 +28,18 @@ emoticon = YAML.load_file(file)
 emot_hash
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon (file, e_meaning)
   # code goes here
+  sorry_message = "Sorry, that emoticon was not found"
+  lib = load_library(file)
+  #binding.pry
+    e_meaning = lib.keys.find do |key|
+      #binding.pry
+     lib[key][:english] == e_meaning
+
+      #binding.pry
+  end
+    e_meaning ? e_meaning : sorry_message
 end
 
 def get_english_meaning (file, j_meaning)
