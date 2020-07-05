@@ -35,17 +35,17 @@ end
 def get_english_meaning (file, j_meaning)
   # code goes here
 #binding.pry
+english_meaning = ""
 sorry_message = "Sorry, that emoticon was not found"
 lib = load_library(file)
-#binding.pry
   lib.each do |key, value|
-    #binding.pry
-    if lib[key][:japanese] == j_meaning
-      return key
-    #binding.pry
-elsif
-  sorry_message
-     #binding.pry
+    value.each do |inner_key, inner_value|
+      if inner_value == j_meaning
+          english_meaning = key
+        end
+      end
+      if english_meaning == ""
+        english_meaning = sorry_message
+      end
     end
-  end
-end
+    eng_meaning
