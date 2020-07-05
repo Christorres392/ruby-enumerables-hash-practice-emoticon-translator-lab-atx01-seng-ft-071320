@@ -7,8 +7,8 @@ def load_library(file)
 emoticons = YAML.load(file)
 emoticon_lib = {"meaning" => {}, "emoticon"=> {}}
 
-emoticons.each { 
-  
+emoticons.each {
+
 }
 
 end
