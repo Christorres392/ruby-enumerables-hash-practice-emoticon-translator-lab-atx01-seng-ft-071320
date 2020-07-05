@@ -38,8 +38,9 @@ def get_english_meaning (file, j_meaning)
 lib = load_library(file)
 #binding.pry
   lib.each do |key, value|
-    binding.pry
+    #binding.pry
     if lib[:japanese] == j_meaning
+      binding.pry
       key
     else
     "No emoticon found"
