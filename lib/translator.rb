@@ -17,7 +17,7 @@ return_hash
 end
 =end
 def load_library(file)
-  hash = {}
+  emot_hash = {}
 
 end
 
