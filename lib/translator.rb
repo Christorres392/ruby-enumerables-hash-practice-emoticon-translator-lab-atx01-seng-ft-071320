@@ -38,10 +38,11 @@ def get_english_meaning (file, j_meaning)
 lib = load_library(file)
 #binding.pry
   lib.each do |key, value|
-    #binding.pry
-    if lib[value].include?(j_meaning)
     binding.pry
+    if lib[value].include?(j_meaning)
+    #binding.pry
     else
     "No emoticon found"
     end
   end
+end
