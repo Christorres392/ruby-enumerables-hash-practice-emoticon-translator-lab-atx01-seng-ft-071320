@@ -1,10 +1,13 @@
 # require modules here
 require "yaml"
+require "pry"
 
 def load_library(file)
   # code goes here
+  binding.pry
 emoticons_file = YAML.load(file)
 new_hash = {}
+
 
 end
 
