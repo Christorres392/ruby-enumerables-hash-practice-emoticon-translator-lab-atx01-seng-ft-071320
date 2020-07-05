@@ -39,9 +39,8 @@ lib = load_library(file)
 #binding.pry
   lib.each do |key, value|
     #binding.pry
-    if lib[value].include?(:japanese)
-      binding.pry
-      key
+    if lib[value].include?(j_meaning)
+    binding.pry
     else
     "No emoticon found"
     end
