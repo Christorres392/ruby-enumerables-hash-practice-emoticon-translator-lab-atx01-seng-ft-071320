@@ -42,4 +42,5 @@ lib.each do |key, value|
     key
   else
     "No emoticon found"
+  end
 end
