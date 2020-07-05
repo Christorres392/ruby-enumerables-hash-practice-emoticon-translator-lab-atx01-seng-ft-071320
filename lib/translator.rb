@@ -34,13 +34,12 @@ end
 
 def get_english_meaning (file, j_meaning)
   # code goes here
-binding.pry
+
 lib = load_library(file)
 
 lib.each do |key, value|
   if value[:japanese] == j_meaning
     key
   else
-
-
+    "No emoticon found"
 end
