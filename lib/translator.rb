@@ -35,7 +35,6 @@ end
 def get_english_meaning (file, j_meaning)
   # code goes here
 #binding.pry
-english_meaning = ""
 sorry_message = "Sorry, that emoticon was not found"
 lib = load_library(file)
 #binding.pry
