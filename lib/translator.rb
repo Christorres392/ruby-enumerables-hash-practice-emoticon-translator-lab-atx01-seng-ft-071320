@@ -4,8 +4,8 @@ require "pry"
 
 def load_library(file)
   # code goes here
-emoticons = YAML.load(file)
-return_hash = {"meaning" => {}, "emoticon"=> {},}
+emoticons = YAML.load_file(file)
+return_hash = {"meaning" => {}, "emoticon"=> {}}
 #binding.pry
 emoticons.each do |key, value|
   return_hash["meaning"][value[1]] = key
