@@ -41,7 +41,7 @@ lib = load_library(file)
   lib.each do |key, value|
     #binding.pry
     if lib[key][:japanese] == j_meaning
-      puts key
+      p key
     #binding.pry
 else
   sorry_message
