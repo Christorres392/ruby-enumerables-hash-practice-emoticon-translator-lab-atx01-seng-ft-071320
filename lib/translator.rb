@@ -45,4 +45,3 @@ lib = load_library(file)
     "No emoticon found"
     end
   end
-end
