@@ -47,5 +47,6 @@ lib = load_library(file)
       if english_meaning == ""
         english_meaning = sorry_message
       end
-    end
+    
     eng_meaning
+end
