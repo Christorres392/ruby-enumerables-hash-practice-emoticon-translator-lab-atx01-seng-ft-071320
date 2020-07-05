@@ -45,7 +45,7 @@ lib = load_library(file)
     #binding.pry
 elsif
   sorry_message
-     binding.pry
+     #binding.pry
     end
   end
 end
