@@ -42,6 +42,7 @@ lib = load_library(file)
     if lib[key][:japanese] == j_meaning
       return key
     #binding.pry
+  else
     "Sorry, that emoticon was not found"
     end
   end
