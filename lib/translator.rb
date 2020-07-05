@@ -8,7 +8,8 @@ emoticons = YAML.load(file)
 return_hash = {"meaning" => {}, "emoticon"=> {}}
 #binding.pry
 emoticons.each do |key, value|
-binding.pry
+  return_hash["meaning"][value[1]] = key
+  return_hash["emoticon"][value[0]] = value[1]
 end
 end
 
