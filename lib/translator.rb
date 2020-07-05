@@ -23,7 +23,7 @@ emoticon = YAML.load_file(file)
     emot_hash[key] = {}
     emot_hash[key][:english] = value[0]
     emot_hash[key][:japanese] = value[1]
-    
+
   end
 binding.pry
 emot_hash
