@@ -44,7 +44,7 @@ lib = load_library(file)
       return key
     #binding.pry
 else
-  j_meaning ? j_meaning : sorry_message
+  sorry_message
      #binding.pry
     end
   end
