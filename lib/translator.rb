@@ -35,6 +35,7 @@ end
 def get_english_meaning (file, j_meaning)
   # code goes here
 #binding.pry
+sorry_message = "Sorry, that emoticon was not found"
 lib = load_library(file)
 #binding.pry
   lib.each do |key, value|
@@ -43,7 +44,7 @@ lib = load_library(file)
       return key
     #binding.pry
 else
-  p "Sorry, that emoticon was not found"
+  sorry_message
      #binding.pry
     end
   end
