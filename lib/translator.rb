@@ -43,8 +43,7 @@ lib = load_library(file)
       return key
     #binding.pry
 else
-    apology = "Sorry, that emoticon was not found"
-  return apology
+  p "Sorry, that emoticon was not found"
      #binding.pry
     end
   end
