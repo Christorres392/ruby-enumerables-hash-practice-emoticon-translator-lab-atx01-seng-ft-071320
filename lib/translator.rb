@@ -38,12 +38,12 @@ def get_english_meaning (file, j_meaning)
 sorry_message = "Sorry, that emoticon was not found"
 lib = load_library(file)
 #binding.pry
-  lib.each do |key, value|
+  j_meaning = lib.keys.find do |key|
     #binding.pry
-    if lib[key][:japanese] == j_meaning
-       key
+   lib[key][:japanese] == j_meaning
+
     #binding.pry
-else
+end
   sorry_message
      #binding.pry
     end
