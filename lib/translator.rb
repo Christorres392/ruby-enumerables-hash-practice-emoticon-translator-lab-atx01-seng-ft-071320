@@ -17,8 +17,16 @@ return_hash
 end
 =end
 def load_library(file)
+emoticon = YAML.load_file(file)
   emot_hash = {}
+  emoticon.each do |key, value|
+    emot_hash[key] = {}
+    emot_hash[key][:english] = value[0]
+    emot_hash[key][:japanese] = value[1]
+    
+  end
 binding.pry
+emot_hash
 end
 
 def get_japanese_emoticon
