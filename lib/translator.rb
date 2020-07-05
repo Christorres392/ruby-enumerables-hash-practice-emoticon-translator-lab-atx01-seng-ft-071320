@@ -43,7 +43,7 @@ lib = load_library(file)
     if lib[key][:japanese] == j_meaning
       return key
     #binding.pry
-elsif
+else
   sorry_message
      #binding.pry
     end
